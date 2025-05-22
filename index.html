@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora imc</title>
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="Js/index.js" defer></script>
+</head>
+<body>
+    <!--Tabela imc (pra calcular)-->
+    <div class="wrapper">
+        <div class="calc-container">
+            <h1>Calculadora de IMC</h1>
+            <form class="form-input">
+                <div class="div-height">
+                    <label for="height">Altura:</label>
+                    <input type="text" name="height" id="height" placeholder="Exemplo 1,75">
+                </div>
+                <div class="div-weight">
+                    <label for="weight">Peso:</label>
+                    <input type="text" name="weight" id="weight" placeholder="Exemplo 70,5">
+                </div>
+            </form>
+            <div class="functions-btns">
+                <button id="calc-btn">Calcular</button>
+                <button id="clear-btn">Limpar</button>
+            </div>
+        </div>
+        <!--Tabela imc (Resultado do calculo)-->
+        <div class="table-container hide">
+            <div class="results">
+                <p id="imc-number">Seu IMC é: <span></span></p> <!--Resultados gerados por javascript-->
+                <p id="imc-info">Situação atual: <span></span></p>
+            </div> <!--Resultados gerados por javascript-->
+            <h3>Confira as classificações</h3>
+            <!--Tabela de classificação para mostrar para o usuário-->
+            <div class="imcTable">
+                <div class="table-header">
+                    <h4>IMC</h4>
+                    <h4>Classificação</h4>
+                    <h4>Obesidade</h4>
+                </div>
+            </div>
+            <!--Voltar para tabela de cálculo-->
+            <button class="back-btn">Voltar</button>
+        </div>
+    </div>
+</body>
+</html>
