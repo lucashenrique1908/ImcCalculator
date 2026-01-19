@@ -23,8 +23,6 @@ Purpose
 
 The main goals of this project are to:
 
- - Practice React component structure and state management
-
  - Handle user input and events
 
  - Improve front‑end interactivity and UI responsiveness
